@@ -1,0 +1,113 @@
+[
+    {
+        "id": 0,
+        "title": "Despertar",
+        "description": "Levantarme en las mañanas, para poner a hervir cafe y desayunar",
+        "done": true
+    },
+    {
+        "id": 1,
+        "title": "Preparar mi comida",
+        "description": "La comida preparada es mi lonche que me llevaré al trabajo",
+        "done": false
+
+    },
+    {
+        "id": 2,
+        "title": "Arreglo Personal",
+        "description": "Me arreglo para salir a tomar mi camion rumbo al trabajo",
+        "done": false
+
+    },
+    {
+        "id": 3,
+        "title": "LLegar al trabajo",
+        "description": "Registro mi entrada y comienzo a trabajar",
+        "done": false
+
+    },
+    {
+        "id": 4,
+        "title": "Salir a comer",
+        "description": "Tomo mi hora mi comida por una hora, a las 3:00 pm",
+        "done": false
+
+    },
+    {
+        "id": 5,
+        "title": "Regreso a trabajar",
+        "description": "Continuo mi jornada laboral hasta las 8:00 pm  ",
+        "done": false
+
+    },
+    {
+        "id": 6,
+        "title": "Salir del trabajo",
+        "description": "Registro mi hora de salida, y me voy a mi casa",
+        "done": false
+
+    },
+    {
+        "id": 7,
+        "title": "llegar a mi casa",
+        "description": "Descanso 20 minutos, para hacer más actividades",
+        "done": false
+
+    },
+    {
+        "id": 8,
+        "title": "Aseo de la casa",
+        "description": "Hago limpieza interna de mi hogar",
+        "done": false
+
+    },
+    {
+        "id": 9,
+        "title": "Tocar Guitarra",
+        "description": "Practico para enseñarme a tocar guitarra",
+        "done": false
+
+    },
+    {
+        "id": 10,
+        "title": "Estudiar programación",
+        "description": "Practicar la tecnología React",
+        "done": false
+
+    },
+    {
+        "id": 11,
+        "title": "cenar",
+        "description": "Cena ligera para no irme si nada en mi estomago",
+        "done": false
+
+    },
+    {
+        "id": 12,
+        "title": "Leer",
+        "description": "Leer un libro como hobbie",
+        "done": false
+
+    },
+    {
+        "id": 13,
+        "title": "Comodidad",
+        "description": "arreglarme para dormir, duchacherme, lvar los dientes y descansar",
+        "done": false
+
+    },
+    {
+        "id": 14,
+        "title": "Navegar en redes sociales",
+        "description": "Distracción del día",
+        "done": false
+
+    },
+    {
+        "id": 15,
+        "title": "Dormir",
+        "description": "Después de todo, pongo alarma para desperatarme a otro día muy temprano y me voy a dormir.",
+        "done": true
+
+    } 
+]
