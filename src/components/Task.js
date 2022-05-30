@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 class Task extends Component {
 
     StyleCompleted(){
@@ -23,8 +23,8 @@ render(){
     </div>
 }
 }
-Task.PropTypes = {
-    task: PropTypes.object.isRequired
+Task.propTypes = {
+    task: propTypes.object.isRequired
 }
 export default Task;
  
