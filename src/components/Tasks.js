@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Task from './Task';
+import ListItem from './ListItem';
 
 
 class Tasks extends Component {
     render(){
         return  this.props.tasks.map(task => 
-        <Task 
-            task={task} 
-            key={task.id} 
-            deleteTask={this.props.deleteTask}
-            checkDone={this.props.checkDone}
-        />);  //Esto es un recorrido de los  elemntos de mi arreglo
+            <ListItem task={task} key={task.id}  deleteTask={this.props.deleteTask} checkDone={this.props.checkDone}></ListItem>
+        );
     }
 }
 Tasks.propTypes = {
