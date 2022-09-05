@@ -5,13 +5,13 @@ import Task from './Task';
 
 class Tasks extends Component {
     render(){
-        return  this.props.tasks.map(task => 
+        return  this.props.prop2.map(task => 
         <Task 
             task={task} 
             key={task.id} 
             deleteTask={this.props.deleteTask}
             checkDone={this.props.checkDone}
-        />);  //Esto es un recorrido de los  elemntos de mi arreglo
+        />);    //Esto es un recorrido de los  elementos de mi arreglo
     }
 }
 Tasks.propTypes = {
