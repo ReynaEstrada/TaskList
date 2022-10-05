@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import  toastHelper  from '../Helpers/ToastHelper';
+import  toastHelper  from '../../Helpers/ToastHelper';
 
 export default class TaskForm extends Component {
     styles = {
@@ -27,7 +27,7 @@ export default class TaskForm extends Component {
             <div>
                 <form onSubmit={this.onSubmit}>
                     <div className="flex flex-col justify-center"> 
-                        <input className={this.styles.input} autofocus="true" autoComplete="off" type="text" name="title"  placeholder="Escribe una tarea"  onChange={this.onChange}  value={this.state.title}/>
+                        <input className={this.styles.input} autoFocus={true} autoComplete="off" type="text" name="title"  placeholder="Escribe una tarea"  onChange={this.onChange}  value={this.state.title}/>
                         <textarea className={this.styles.input} autoComplete="off" name="description"  placeholder="Escribe una descripción de la tarea"  onChange={this.onChange}  value={this.state.description}></textarea>
                         <input className="py-1 text-white block bg-indigo-500 border border-indigo-500 rounded-md hover:cursor-pointer hover:bg-indigo-400 hover:border-indigo-400 transition duration-200 ease-in-out" type="submit"/>
                     </div>
