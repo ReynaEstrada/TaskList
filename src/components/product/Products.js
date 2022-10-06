@@ -9,7 +9,7 @@ function Products(){
         fetch('https://dummyjson.com/products')
         .then(res => res.json())
         .then((data) => {
-            setProducts(data.products);
+            setProducts(prevProducts => prevProducts = data.products);
         })
     }
     useEffect(() => {
@@ -19,17 +19,13 @@ function Products(){
     return (
         <div>
             <h1>Products</h1>
-            <div ref={list}>
+            <div>
                 <div className="bg-gray-100 ">
                     <div className="mx-auto container py-8">
-                        <div className="flex flex-wrap items-center lg:justify-between justify-center">
-                        { 
-                            products.map((product) => {
-                                return (
-                                    <ProductItem  key={product.id} product={product} />
-                                )
-                            })
-                        }
+                        <div ref={list} className="flex flex-wrap items-center lg:justify-between justify-center">
+                            { 
+                                products.map(product => <ProductItem  key={product.id} product={product} />)
+                            }
                         </div>
                     </div>
                 </div>

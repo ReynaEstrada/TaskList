@@ -34,6 +34,16 @@ class App extends Component {
       toastHelper.infoToast("Tarea "+id+" no eliminada");
     }
   }
+  sortByKey(array, key) {
+    return array.sort(function(a, b) {
+        var x = a[key]; var y = b[key];
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    });
+  }
+  sortTasks() {
+      let newTasks = this.sortByKey(this.state.tasks, 'description')
+      this.setState({tasks: newTasks});
+  }
   checkDone = id  =>{
     const newTasks = this.state.tasks.map(task =>{
       if (task.id === id) {
@@ -92,6 +102,7 @@ class App extends Component {
           </div>
         </section>
         <ToastContainer autoClose={8000} />
+        <button onClick={() => this.sortTasks()}>SORT</button>
         <div className="flex justify-center min-h-screen mx-auto">
           <div className="p-4 max-w-xl bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700 max-h-screen overflow-y-scroll">
               <div className="flex justify-start items-center mb-4">
