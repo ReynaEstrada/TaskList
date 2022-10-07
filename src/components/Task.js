@@ -1,17 +1,13 @@
+//Este archivo denominado componente, su funcionalidad es encapsular la lista de todas las tareas.
 import React, { Component } from 'react';
 import propTypes from 'prop-types';
+
 class Task extends Component {
 
-    StyleCompleted(){
-        return{
-            fontSize: '20px',
-            color:this.props.task.done ?'#292524': '#ef4444',
-            textDecoration: this.props.task.done? 'line-through':'none'
-        }
-    }
+   
 render(){    
     const {task} = this.props;
-    return <div style={this.StyleCompleted()}>
+    return <div>
             {task.title} - 
             {task.description} - 
             {task.done} -
